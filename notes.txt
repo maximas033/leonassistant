@@ -1,0 +1,6 @@
+// on load check if there is any important information i need to know 
+for example gmail, reminders,  etc.    (make sure it gets announced), also it can be disabled in the settings page 
+
+// create accessable settings page 
+
+// connect to the  database and firebase

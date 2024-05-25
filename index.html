@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- CONNECT IT TO CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="leonlogo.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <!-- CONNECT IT TO FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <!-- MEDIAPIE -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+  </head>
+  <body>
+    <!-- Display Time -->
+    <section class="CurrentTime" id="topInformation">
+      <div>
+        <h3 id="DisplayGreeting"></h3>
+      </div>
+      <div>
+        <h4 id="DisplayCurrentTime"></h4>
+      </div>
+      <div>
+        <h6 id="DisplayCurrentDay"></h6>
+      </div>
+    </section>
+
+    <!-- THIS IS THE LOGO, IT ILL BE ALL THE WAY AT THE BOTTOM-->
+    <section class="center" id="centerPiece">
+      <div class="circleOuter" id="circleOuter"></div>
+      <div class="circle1" id="circle1">
+        <div class="circle2" id="circle2">
+          <div class="circle3" id="circle3">
+            <h3 id="name">L E O N</h3>
+          </div>
+          <div class="circleOuter1" id="circleOuter1"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCKDOWN LOCKDOWN MESSAGE -->
+    <section id="LeonLockdownMessage" onclick="LeonUnlockLeon()">
+        <div>
+            <h3>LEON IS UNDER A LOCKDOWN</h3>
+         </div>
+    </section>
+
+
+    <script src="index.js"></script>
+    <script src="firebaseconnection.js"></script>
+    <script src="leonOnLoad.js"></script>
+    <script src="leonFunctions.js"></script>
+
+    <!-- <script src="LEONJSFILES/LeonOnLoad2.js"></script>
+    <script src="LEONJSFILES/LeonUnlock.js"></script>
+    <script src="LEONJSFILES/LeonLockdown.js"></script>
+    <script src="LEONJSFILES/SpeechRecognition.js"></script>
+    <script src="LEONJSFILES/JavascriptFaceDetection.js"></script>
+    <script src="LEONJSFILES/LeonWeatherDisplay.js"></script> -->
+  </body>
+</html>
