@@ -70,4 +70,31 @@ body {
     50 50;
     border-style: inset;
     border-width: 15px;
-  }
+}
+/* 
+.
+.
+.
+*/
+.wifi_connection{
+    width: 20%;
+    color: white;
+    text-align: center;
+    border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg)
+    70 70;
+    border-style: inset;
+    border-width: 20px;
+    padding: 0;
+    position: absolute;
+    bottom: 3%;
+    right: 4%;
+    animation: blink 15s linear infinite;
+
+}
+
+.wifi_connection h4{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
