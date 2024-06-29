@@ -40,7 +40,12 @@
       <h2>S E T T I N G S</h2>
     </section>
 
-
+  <section class="leftSide" id="enable_wifi_button">
+    <button class="borderBoxDanger" onclick="toggleWifiQRCode()" id="enableWIFIButton">
+      E N A B L E _ W I F I
+    </button>
+  </section>
+  
     <button class="borderBoxDanger" onclick="startLockdown()" id="lockdownButton">
         L O C K D O W N
     </button>
@@ -48,7 +53,7 @@
 
     <script src="firebaseconnection.js"></script>
     <script src="leonFunctions.js"></script>
-
+    <script src="leonOnLoadSettings.js"></script>
     <!-- <script src="LeonFirebase/LeonFirebase.js"></script>
     <script src="LEONJSFILES/LeonOnLoad.js"></script>
     <script src="LEONJSFILES/LeonLockdown.js"></script>

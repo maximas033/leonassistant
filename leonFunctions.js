@@ -1,6 +1,5 @@
 // FUNCTION BELOW WORKS ---- GEMINI
 function startLockdown() {
-    // Create lockdown object
     var lockdown = {
       lockdown: true
     };
@@ -11,8 +10,6 @@ function startLockdown() {
       })
       .catch((error) => {
         console.error("Error starting lockdown:", error);
-        //display in a console log window bottom right side of the screen aka. div
-
       });
   }
 
@@ -48,4 +45,24 @@ function startLockdown() {
     }
   }
 
+  function toggleWifiQRCode() {
+    let buttonText;
+  
+    // Get the current state from Firebase
+    firebase.database().ref('showWifiQRCode/showwifiqrcode').once('value')
+      .then(snapshot => {
+        const currentState = snapshot.val();
+        const newState = !currentState;
+        buttonText = newState ? "D I S A B L E _ W I F I" : "E N A B L E _ W I F I";
+        return firebase.database().ref('showWifiQRCode').update({ showwifiqrcode: newState });
+      })
+      .then(() => {
+        // Update the button text
+        document.getElementById("enableWIFIButton").innerText = buttonText;
+        console.log("WiFi QR Code state toggled successfully!");
+      })
+      .catch((error) => {
+        console.error("Error toggling WiFi QR Code state:", error);
+      });
+  }
   

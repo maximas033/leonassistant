@@ -34,3 +34,14 @@ body {
 #Settingsheading h2{
     font-size: 160px;
 }
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+}
+
+.leftSide button{
+    background-color: rgb(116, 195, 255);
+    margin-bottom: 5%;
+    color: rgb(0, 76, 255);
+}
